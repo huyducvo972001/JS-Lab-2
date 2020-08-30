@@ -1,0 +1,72 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Võ Đức Huy - PS14504</title>
+
+    <style>
+       .container { width: 1140px; margin:auto; border:1px solid darkgrey}
+        header { background: darkolivegreen; height: 50px; position: relative;}
+        main{ background: darkseagreen; height: 400px;}
+        footer { 
+            background: darkslategray;
+            height: 100px;
+            margin-top: -17px;
+        }
+        #chao { color: white; font-weight: bold; font-style: italic; 
+          position: absolute; right: 5px; bottom: 5px;}
+        footer p{
+            text-align: center;
+            padding-top: 20px;
+            line-height: 0px;
+            color: white;
+
+        }
+        #ht, #mail{
+            font-weight: bold;
+            color: yellow;
+        }
+        main>p{
+            margin-top: 0;
+            line-height: 40px;
+            margin-left: 30px;
+            font-size: 18px;
+            color: darkgreen;
+        }
+        a{
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="chao">
+                <script>
+                    var n = new Date();
+                    var gio = n.getHours();
+                    if (gio<12) document.write("Chào buổi sáng")
+                    else document.write("Chào buổi chiều")
+                </script>
+            </div>
+        </header>
+        <main>
+            <p>
+            JavaScript được tạo ra với mục đích xử lý các tác vụ phía Client như <br/>
+
+            1. Tạo menu xổ xuống. Các item menu khi đưa chuột vào sẽ xổ xuống các mục con của nó.<br/>
+            2. Thay đổi nội dung trang web. Ví dụ: hiện kết quả khen/chê tùy user trả lời câu hỏi đúng dau, hiện lời chào tùy thời gian buổi sáng hay chiều…<br/>
+            3. Thêm các thành phần động vào trang web như slide show, carousel.<br/>
+            4. Tạo các hiệu ứng cho hình ảnh, text…trong trang. Ví dụ các hiệu ứng ẩn hiện hình, đổi hình khi đưa chuột vào.<br/>
+            5. JavaScript có thể dùng viết game<br/>
+            <a href="https://thesudoku.com/"> https://thesudoku.com/</a><br/>
+            <a href="https://www.w3schools.com/graphics/game_intro.asp">https://www.w3schools.com/graphics/game_intro.asp</a><br/>
+            6. Kiểm tra tình hợp lệ cửa dữ liệu người dùng (trong form). Ví dụ form đăng ký của facebook<br/>
+        </p>
+        </main>
+        <footer>
+            <p><span>Họ tên:</span><span id="ht"> Võ Đức Huy</span></p>
+            <p><span>Email:</span><span id="mail"> huyducvo972001@gmail.com</span></p>
+        </footer>
+    </div>
+</body>
+</html>

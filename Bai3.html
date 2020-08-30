@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Võ Đức Huy - PS14504</title>
+    <script>
+        var a = prompt("Nhập số a: ");
+        var b = prompt("Nhập số b: ");
+        var c = prompt("Nhập số c: ");
+        var delta = Math.pow(b,2) - 4*a*c;
+        
+        if(isNaN(a)==true){
+            a=0;
+        }
+        if(isNaN(b)==true){
+            b=0;
+        }
+        if(isNaN(c)==true){
+            c=0;
+        }
+    </script>
+    <style>
+        
+        .container{
+            width: 700px;
+            margin: auto;
+            margin-top: 100px;
+            border: 2px solid rgb(98, 98, 185);
+            background-color: white;      
+            color: brown;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+        h3{
+            color: red;
+            text-align: center;
+        }
+        .text{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>GIẢI PHƯƠNG TRÌNH BẬC 2</h3>
+        <div class="text">
+        <script>
+            document.write(a);
+            document.write("x<sup>2</sup> + ")
+            document.write(b);
+            document.write("x + ");
+            document.write(c);
+            document.write(" = 0");
+            if(delta<0){
+                document.write("<p>Phương trình vô nghiệm</p>");
+            }
+            else if (delta == 0){
+                var x0 = -b/(2*a);
+                document.write("<p>Phương trình có nghiệm kép x =" + x0 +"</p>");
+            }
+            else{
+                var x1 = (-b + Math.sqrt(delta))/(2*a);
+                var x2 = (-b - Math.sqrt(delta))/(2*a);
+                document.write("<p>Phương trình có 2 nghiệm</p>");
+                document.write("<p>x<sub>1</sub> = " + x1 + "</p>");
+                document.write("<p>x<sub>2</sub> = " + x2 + "</p>");
+            }
+        </script>
+        </div>
+    </div>
+</body>
+</html>
